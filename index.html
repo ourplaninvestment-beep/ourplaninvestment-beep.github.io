@@ -181,6 +181,9 @@ a{color:var(--accent)}
 .adslot .ad-main{font-weight:700;color:var(--ink);margin-top:4px;font-size:15px}
 .adslot .ad-sub{font-size:13px;margin-top:2px}
 .ad-leader{margin:24px 0 4px}
+.ad-live{padding:12px 10px 14px}
+.ad-live .ad-frame{display:flex;justify-content:center;align-items:flex-start;overflow:hidden;max-width:100%;margin-top:8px}
+.ad-live .ad-frame iframe{border:0;flex:none}
 
 /* ---------- Category chips ---------- */
 .chips{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0 16px}
@@ -358,11 +361,21 @@ footer .fine{border-top:1px solid #24405e;margin-top:24px;padding-top:16px;color
 </div>
 
 <div class="wrap">
-  <!-- AD SLOT: Leaderboard 728×90 / responsive — paste AdSense code inside this box -->
-  <div class="adslot ad-leader" role="complementary" aria-label="Advertisement">
+  <!-- AD: Adsterra Leaderboard 728×90 -->
+  <div class="adslot ad-leader ad-live" role="complementary" aria-label="Advertisement">
     <div class="ad-label">Advertisement</div>
-    <div class="ad-main">Leaderboard Ad — 728 × 90</div>
-    <div class="ad-sub">Ad slot ready. Approved AdSense units placed here earn from every U.S. visitor.</div>
+    <div class="ad-frame">
+<script>
+  atOptions = {
+    'key' : '71ef70217ceab81b359c77148c62e3fe',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script data-cfasync="false" src="https://bicea.org/22/71ef70217ceab81b359c77148c62e3fe"></script>
+    </div>
   </div>
 
   <div class="chips" id="tools" role="group" aria-label="Filter tools by category">
@@ -375,11 +388,21 @@ footer .fine{border-top:1px solid #24405e;margin-top:24px;padding-top:16px;color
 
   <div class="grid" id="toolGrid"></div>
 
-  <!-- AD SLOT: In-feed native -->
-  <div class="adslot" style="margin-top:18px" role="complementary" aria-label="Advertisement">
+  <!-- AD: Adsterra Rectangle 300×250 -->
+  <div class="adslot ad-live" style="margin-top:18px" role="complementary" aria-label="Advertisement">
     <div class="ad-label">Advertisement</div>
-    <div class="ad-main">In-Feed Ad</div>
-    <div class="ad-sub">Native ad slot between the tool grid and the calculator — high viewability on mobile and desktop.</div>
+    <div class="ad-frame">
+<script>
+  atOptions = {
+    'key' : '8fb280e3ef16bbaf9a205cf7a4bdc65e',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script data-cfasync="false" src="https://bicea.org/22/8fb280e3ef16bbaf9a205cf7a4bdc65e"></script>
+    </div>
   </div>
 
   <!-- ================= WORKSPACE ================= -->
@@ -621,13 +644,6 @@ footer .fine{border-top:1px solid #24405e;margin-top:24px;padding-top:16px;color
     </div>
   </section>
 
-  <!-- AD SLOT: Bottom banner -->
-  <div class="adslot" style="margin-top:18px" role="complementary" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <div class="ad-main">Bottom Banner Ad</div>
-    <div class="ad-sub">Shown after visitors finish a calculation — a high-engagement placement.</div>
-  </div>
-
   <!-- ================= POPULAR SEARCHES ================= -->
   <section class="section reveal" id="popular">
     <div class="section-head"><h2>Popular searches <span class="accent-word">in the USA</span></h2></div>
@@ -686,11 +702,21 @@ footer .fine{border-top:1px solid #24405e;margin-top:24px;padding-top:16px;color
     </div>
   </section>
 
-  <!-- AD SLOT: Mid-content -->
-  <div class="adslot" role="complementary" aria-label="Advertisement">
+  <!-- AD: Adsterra Skyscraper 160×300 -->
+  <div class="adslot ad-live" role="complementary" aria-label="Advertisement">
     <div class="ad-label">Advertisement</div>
-    <div class="ad-main">Mid-Content Ad</div>
-    <div class="ad-sub">Placed between the calculator guides and the state tax table — readers are deep in the page here.</div>
+    <div class="ad-frame">
+<script>
+  atOptions = {
+    'key' : 'b10a377f55fdf2f41f3b958d73a71861',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script data-cfasync="false" src="https://bicea.org/22/b10a377f55fdf2f41f3b958d73a71861"></script>
+    </div>
   </div>
 
   <!-- ================= SALES TAX BY STATE ================= -->
@@ -738,7 +764,7 @@ footer .fine{border-top:1px solid #24405e;margin-top:24px;padding-top:16px;color
       <div><h3>Privacy Policy</h3><p>This site does not collect, store or sell personal information. Calculator inputs stay in your browser. Advertising partners may use cookies to show relevant ads; you can opt out of personalized ads in your Google ad settings.</p></div>
       <div><h3>Disclaimer</h3><p>Results are estimates for education and planning only, not financial, tax, legal or medical advice. Rates and brackets change — confirm important decisions with a qualified professional.</p></div>
     </div>
-    <p class="fine">USA Tools — free calculators for the United States. Site owners: replace each dashed ad slot with your AdSense or ad-network code to start earning from traffic. Tax figures use IRS 2025 brackets; last reviewed November 2026.</p>
+    <p class="fine">USA Tools — free calculators for the United States. Tax figures use IRS 2025 brackets; last reviewed November 2026.</p>
   </div>
 </footer>
 
@@ -1461,5 +1487,7 @@ function initHero3D(){
 if(document.readyState === "complete"){ initHero3D(); }
 else{ window.addEventListener("load", initHero3D); }
 </script>
+<!-- AD: Adsterra site-wide script -->
+<script data-cfasync="false" src="https://afders.org/1/150783a18e3f8b1cdb26225ca7b8fa72"></script>
 </body>
 </html>
